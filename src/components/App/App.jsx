@@ -7,7 +7,7 @@ function App() {
     return (
       <div className="container">
         <Routes>
-          {/* <Route path="/" element={<Layout />}> */}
+          <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
             {/* <Route path="movies" element={<MoviesPage />} />
             <Route path="/movies/:movieId" element={<MoviesDetails />}>
@@ -15,7 +15,7 @@ function App() {
               <Route path="/movies/:movieId/reviews" element={<Reviews />} />
             </Route> */}
             {/* <Route path="*" element={<Navigate to="/" />} /> */}
-          {/* </Route> */}
+          </Route>
         </Routes>
         <Toaster position="top-right" />
       </div>
