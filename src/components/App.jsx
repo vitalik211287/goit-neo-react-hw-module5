@@ -1,6 +1,7 @@
 import {  Routes, Route } from "react-router";
 import { Toaster } from "react-hot-toast";
-import HomePage from "../../pages/HomePage/HomePage.jsx";
+import HomePage from "../pages/HomePage/HomePage.jsx";
+import Layout from "./Layout/Layout.jsx";
 import "./App.css";
 
 function App() {
