@@ -11,6 +11,15 @@ export default function Navigation() {
       <NavLink className={css.link} to="/movies">
         Movies
       </NavLink>
+      {/* <NavLink className={css.link} to="/movies">
+        MoviesPage
+      </NavLink> */}
+      {/* <NavLink className={css.link} to="/movies/:movieId">
+        MoviesDetails
+      </NavLink> */}
+      {/* <NavLink className={css.link} to="/movies">
+        Movies
+      </NavLink> */}
     </nav>
   );
 }
