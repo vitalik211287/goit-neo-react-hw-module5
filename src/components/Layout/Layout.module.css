@@ -1,6 +1,5 @@
-.header { padding: 20px 40px ;
-  border-bottom: 2px solid #26b9ff;
-  border-radius: 5px;
-  border: 2px solid #26b9ff;}
- 
-
+.header {
+  padding: 10px 20px;
+  border-bottom: 3px solid #cfcece;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}

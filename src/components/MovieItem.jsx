@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function MovieItem({ movie }) {
-    console.log(movie);
-    console.log(movie.title);
+  const location = useLocation();
   return (
     <li>
-      <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
+      <Link
+        to={`/movies/${movie.id}`}
+        state={{ from: location.pathname + location.search }}
+      >
+        {movie.title}
+      </Link>
     </li>
   );
 }

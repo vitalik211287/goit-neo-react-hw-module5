@@ -1,0 +1,65 @@
+.wrapper {
+  padding: 16px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.details {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.poster {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+}
+
+.title {
+  margin: 0 0 12px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.text {
+  margin: 8px 0;
+}
+
+.additional {
+  margin: 16px 0 8px;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0 0 16px;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link.active {
+  text-decoration: underline;
+}
+
+.error {
+  color: crimson;
+  padding: 16px;
+}

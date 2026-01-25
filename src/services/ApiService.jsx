@@ -33,13 +33,12 @@ export async function getMovieById(id) {
 // Credits (actors)
 export async function getMovieActors(id) {
   const { data } = await tmdb.get(`/movie/${id}/credits`);
-  return data.cast; // зручно одразу cast
+  return data.cast; 
 }
 
 // Reviews
 export async function getMovieReviews(id) {
   const { data } = await tmdb.get(`/movie/${id}/reviews`);
-  return data.results; // зручно одразу results
+  return data.results; 
 }
 
-console.log("TMDB TOKEN:", import.meta.env.VITE_TMDB_TOKEN);

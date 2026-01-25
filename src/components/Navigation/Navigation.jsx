@@ -4,22 +4,24 @@ import css from "./Navigation.module.css";
 export default function Navigation() {
   return (
     <nav className={css.nav}>
-      <NavLink className={css.link} to="/">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? `${css.link} ${css.active}` : css.link
+        }
+        end
+      >
         Home
       </NavLink>
 
-      <NavLink className={css.link} to="/movies">
+      <NavLink
+        to="/movies"
+        className={({ isActive }) =>
+          isActive ? `${css.link} ${css.active}` : css.link
+        }
+      >
         Movies
       </NavLink>
-      {/* <NavLink className={css.link} to="/movies">
-        MoviesPage
-      </NavLink> */}
-      {/* <NavLink className={css.link} to="/movies/:movieId">
-        MoviesDetails
-      </NavLink> */}
-      {/* <NavLink className={css.link} to="/movies">
-        Movies
-      </NavLink> */}
     </nav>
   );
 }

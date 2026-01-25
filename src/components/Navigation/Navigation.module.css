@@ -16,17 +16,23 @@
 }
 
 .link:hover {
-  color: #ff9000;
+  color:#26b9ff;
 }
 
 /* active — це клас, який NavLink додає сам */
-.link.active::after {
+.active::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -7px;
+  bottom: -3px;
   width: 100%;
   height: 3px;
   border-radius: 2px;
-  background-color: #26b9ff;
+  background-color:#e5e5e5;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+
+.link.active {
+  color: red;
 }
